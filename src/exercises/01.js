@@ -1,3 +1,5 @@
+// left off at 26:02 of youtube vid (Advance React Component Patterns workshop @ PayPal (Part 1))
+
 // Building the toggle component
 
 import React from 'react'
