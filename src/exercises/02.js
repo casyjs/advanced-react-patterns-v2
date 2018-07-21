@@ -1,3 +1,5 @@
+// left off 1:10:30 youtube
+
 // Compound Components
 
 import React from 'react'
@@ -7,6 +9,11 @@ class Toggle extends React.Component {
   // you can create function components as static properties!
   // for example:
   // static Candy = (props) => <div>CANDY! {props.children}</div>
+  static On = props => (props.on ? props.children : null)
+  static Off = props => (props.on ? null : props.children)
+  static Button = props => (
+    <Switch on={props.on} onClick={props.toggle} />
+  )
   // Then that could be used like: <Toggle.Candy />
   // This is handy because it makes the relationship between the
   // parent Toggle component and the child Candy component more explicit
